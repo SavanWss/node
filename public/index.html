@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign in & Sign up Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+
+    <!-- <button type="submit"></button> -->
+
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form  autocomplete="on" class="sign-in-form" id="formId">
+<!--Form 1 Logo CareXpert -->
+            <div class="logo">
+              <img src="./img/logo.png" alt="CareXpert" />
+              <h4>CareXpert</h4>
+            </div>
+<!--For New Sign Up   -->
+            <div class="heading">
+              <h2>Welcome Back</h2>
+              <h6>Not registred yet?</h6>
+              <a href="#" class="toggle">Sign up</a>
+            </div>
+<!--Sign In Form -->
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" minlength="4" class="input-field" autocomplete="off" id="emailId" required />
+                <label>Email</label>
+              </div>
+              <div class="input-wrap">
+                <input type="password" minlength="4" class="input-field" autocomplete="off" id="passId" required />
+                <label>Password</label>
+              </div>
+
+          <input type="submit" value="Sign In" class="sign-btn" /> 
+
+                <!-- <button value="Sign In" class="sign-btn"  onclick=" page_redirect(e)" >Sign In</button> -->
+<p class="text">
+                Forgotten your password or you login datails?
+                <a href="#">Get help</a> signing in
+              </p>
+            </div>
+          </form>
+<!-- Form 2 Logo CareXpert-->
+          <form action="index.html" autocomplete="off" class="sign-up-form">
+            <div class="logo">
+              <img src="./img/logo.png" alt="CareXpert" />
+              <h4>CareXpert</h4>
+            </div>
+<!--For Sign In-->
+            <div class="heading">
+              <h2>Get Started</h2>
+              <h6>Already have an account?</h6>
+              <a  class="toggle">Sign in</a>
+            </div>
+<!--SignUp Form-->
+<!-- Step 1 -->
+            <div class="actual-form">
+              <div class="step Step1 index active">
+                <div class="input-wrap" >
+                  <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label>First Name</label>
+                </div>
+                <div class="input-wrap" >
+                  <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label>Last Name</label>
+                </div>
+                <div class="input-wrap" >
+                  <input type="text" minlength="4" class="input-field" onfocus="(this.type='date')" autocomplete="off" required />
+                  <label>D.O.B</label>
+                </div>
+                <input type="button" value="Next" class="next-btn" id="nextBtn"/> 
+              </div>
+<!-- step 2 -->
+              <div class="step Step2 " >
+                <div class="input-wrap">
+                  <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label>Address</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label>City</label>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                  <label>PinCode</label>
+                </div>
+                <input type="button" value="Back" class="back-btn" id="btn-group"/>
+                <input type="button" value="Next" class="next-btn" id="btn-group"/>
+              </div>
+<!-- step 3 -->
+            <div class="step Step3">
+                <div class="input-wrap" >
+                  <input type="tel" minlength="10" maxlength="10" class="input-field" autocomplete="off" required />
+                  <label>Mobile Number (+91)</label>
+                </div>
+                <div class="input-wrap" >
+                  <input type="email" class="input-field" autocomplete="off" required />
+                  <label>Email</label>
+                </div>
+                <div class="input-wrap" >
+                  <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                  <label>Password</label>
+                </div>
+                <input type="button" value="Back" class="back-btn" id="btn-group"/>
+                <input type="submit" value="Submit" class="submit-btn" id="btn-group"/>
+            </div>
+<!-- Terms And Condition -->
+              <p class="text">
+                By signing up, I agree to the
+                <a href="#">Terms of Services</a> and
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </form>
+        </div>
+<!-- Slide Image -->
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="./img/dr team.png" class="image img-1 show" alt="" />
+            <img src="./img/doc lap.gif" class="image img-2" alt="" />
+            <img src="./img/doc mob.gif" class="image img-3" alt="" />
+          </div>
+<!-- Slide Text  -->
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Stay Home, Stay Safe</h2>
+                <h2>Maintain 6ft. Social Distance</h2>
+                <h2>Wear a Mask or Resprirator</h2>
+              </div>
+            </div>
+<!-- Slide Bullets -->
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+              <span data-value="2"></span>
+              <span data-value="3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<!-- Javascript file -->
+  <script src="app.js">
+  
+  </script>
+  <script>
+//       function page_redirect(e){  
+//         e.preventDefault()
+//         console.log("wefeoi");
+// // window.location = "https://www.javatpoint.com/";  
+// }  
+  </script>
+</body>
+</html>
